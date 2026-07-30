@@ -469,16 +469,7 @@ process.on('SIGTERM', async () => {
   process.exit(0);
 });
 
-if (require.main === module) {
-  startServer().catch(err => {
-    console.error('[FATAL] Failed to start server:', err);
-    process.exit(1);
-  });
-}
-
-module.exports = {
-  app,
-  keysCache,
-  accountStatsByKey,
-  activeAccountsByKey
-};
+startServer().catch(err => {
+  console.error('[FATAL] Failed to start server:', err);
+  process.exit(1);
+});
