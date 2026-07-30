@@ -1,6 +1,6 @@
 node_modules
 npm-debug.log
-keys/*
+keys
 .git
 .gitignore
 README.md
@@ -8,5 +8,4 @@ API_DOCUMENTATION.md
 DOCS_ADMIN_KEY_MANAGEMENT.md
 DOCS_DASHBOARD_STATS.md
 DOCS_CLIENT_INTEGRATION.md
-coverage/
-*.log
+coverage
