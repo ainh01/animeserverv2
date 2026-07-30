@@ -3,12 +3,9 @@ FROM node:18-alpine
 WORKDIR /app
 
 COPY package*.json ./
-
-RUN npm ci --only=production
+RUN npm install --production
 
 COPY server.js ./
-
-RUN mkdir -p /app/keys
 
 EXPOSE 3001
 
